@@ -1,0 +1,15 @@
+syntax = "proto3";
+ 
+package timer;
+ 
+service TimeService{
+ 
+  rpc giveTime(TimeReq) returns (TimeResp) {}
+ 
+ }
+  message TimeReq{
+  string TimeZone = 1;
+ }
+  message TimeResp{
+  string Result = 1;
+ }
